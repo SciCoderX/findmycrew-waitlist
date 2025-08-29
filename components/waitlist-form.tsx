@@ -18,6 +18,16 @@ export function WaitlistForm() {
   const [isSubmitted, setIsSubmitted] = useState(false)
   const { toast } = useToast()
 
+  const handleFormStart = () => {
+    // Track form interactions
+    if (typeof window !== 'undefined' && (window as any).gtag) {
+      (window as any).gtag('event', 'form_start', {
+        'event_category': 'engagement',
+        'event_label': 'email_field_focus'
+      });
+    }
+  }
+
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
 
@@ -40,6 +50,14 @@ export function WaitlistForm() {
     }
 
     setIsSubmitting(true)
+
+    // Track email submissions
+    if (typeof window !== 'undefined' && (window as any).gtag) {
+      (window as any).gtag('event', 'email_signup', {
+        'event_category': 'conversion',
+        'event_label': 'waitlist_signup'
+      });
+    }
 
     try {
       const result = await submitToWaitlist(email)
@@ -95,6 +113,7 @@ export function WaitlistForm() {
           placeholder="your.email@brown.edu"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
+          onFocus={handleFormStart}
           required
           className="w-full"
           disabled={isSubmitting}
