@@ -1,6 +1,7 @@
 import { WaitlistForm } from "@/components/waitlist-form"
 import { Card, CardContent } from "@/components/ui/card"
 import { Users, MapPin, Heart, Zap } from "lucide-react"
+import Image from "next/image"
 
 export default function WaitlistPage() {
   return (
@@ -9,8 +10,14 @@ export default function WaitlistPage() {
       <header className="container mx-auto px-4 py-6">
         <div className="flex items-center justify-between">
           <div className="flex items-center space-x-2">
-            <div className="w-8 h-8 bg-gradient-to-r from-purple-600 to-blue-600 rounded-lg flex items-center justify-center">
-              <Users className="w-5 h-5 text-white" />
+            <div className="w-8 h-8 rounded-lg overflow-hidden">
+              <Image 
+                src="/Dockly_final_unvectorized logo.png" 
+                alt="Dockly Logo" 
+                width={32} 
+                height={32}
+                className="w-full h-full object-contain"
+              />
             </div>
             <span className="text-xl font-bold text-gray-900">Dockly</span>
           </div>
@@ -28,7 +35,7 @@ export default function WaitlistPage() {
               </span>
             </h1>
             <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
-              We're building a private, student-powered social platform for Brown students. Drop your .edu email to join the interest list for early access, sneak peeks, and help shape the future of campus connection. No spam. No public access. Just students and campus vibes!
+              We're building a private, student-powered social platform for Brown students. Drop your .edu email to join the interest list for early access, sneak peeks, and help shape the future of campus connection. No spam. No public access. Meet your new best friend or future spouse, join today!
             </p>
           </div>
 
@@ -109,7 +116,7 @@ export default function WaitlistPage() {
               If you are under 18, please obtain parental permission before signing up.
             </p>
             <p>
-              For questions or data removal requests, contact: <a href="mailto:dockly.help@gmail.com" className="text-blue-600 hover:text-blue-800">dockly.help@gmail.com</a>
+              For questions or data removal requests, contact: <a href="https://mail.google.com/mail/?view=cm&to=dockly.help@gmail.com&su=Dockly%20Support%20Request" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800">dockly.help@gmail.com</a>
             </p>
           </div>
           
