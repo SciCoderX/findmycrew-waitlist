@@ -2,6 +2,7 @@ import { WaitlistForm } from "@/components/waitlist-form"
 import { Card, CardContent } from "@/components/ui/card"
 import { Users, MapPin, Heart, Zap } from "lucide-react"
 import Image from "next/image"
+import { PrivacyModal } from "@/components/privacy-modal"
 
 export default function WaitlistPage() {
   return (
@@ -100,28 +101,13 @@ export default function WaitlistPage() {
       {/* Footer */}
       <footer className="container mx-auto px-4 py-8">
         <div className="max-w-4xl mx-auto">
-          {/* Privacy Notice */}
-          <div className="bg-gray-50 rounded-lg p-6 mb-6 text-sm text-gray-600">
-            <h3 className="font-semibold text-gray-800 mb-3">Privacy & Participation Notice:</h3>
-            <p className="mb-3">
-              By submitting your email, you consent to receive occasional updates related to the development of our upcoming platform. We collect your email to gauge interest and notify you about launch-related news. Participation is entirely voluntary. By signing up, you acknowledge that this is a pre-launch interest survey, not a live service, and that no guarantees are made regarding future access, features, or availability.
-            </p>
-            <p className="mb-3">
-              No personal data beyond your email will be collected. No financial transactions are involved. No liability is assumed for technical errors, delays, or third-party service interruptions.
-            </p>
-            <p className="mb-3">
-              We do not share, sell, or rent your information to third parties. Your data is stored securely and used only for internal planning and communication. You may unsubscribe at any time via the link in our emails.
-            </p>
-            <p className="mb-3">
-              If you are under 18, please obtain parental permission before signing up.
-            </p>
-            <p>
-              For questions or data removal requests, contact: <a href="https://mail.google.com/mail/?view=cm&to=dockly.help@gmail.com&su=Dockly%20Support%20Request" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800">dockly.help@gmail.com</a>
-            </p>
-          </div>
-          
-          <div className="text-center text-gray-500">
+          <div className="text-center text-gray-500 space-y-2">
             <p>&copy; 2024 Dockly. Building connections, one crew at a time.</p>
+            <div className="text-xs text-gray-500">
+              <p>
+                We improve our products and advertising by using Microsoft Clarity to see how you use our website. By using our site, you agree that we and Microsoft can collect and use this data. Our <PrivacyModal /> has more details.
+              </p>
+            </div>
           </div>
         </div>
       </footer>
