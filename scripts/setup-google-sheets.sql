@@ -1,0 +1,24 @@
+-- Google Sheets Setup Instructions
+-- 
+-- To connect this waitlist to Google Sheets, follow these steps:
+-- 
+-- 1. Go to Google Cloud Console (console.cloud.google.com)
+-- 2. Create a new project or select existing one
+-- 3. Enable Google Sheets API
+-- 4. Create credentials (Service Account)
+-- 5. Download the JSON key file
+-- 6. Share your Google Sheet with the service account email
+-- 7. Set up environment variables:
+--    - GOOGLE_SHEETS_ID (your spreadsheet ID)
+--    - GOOGLE_SERVICE_ACCOUNT_EMAIL
+--    - GOOGLE_PRIVATE_KEY
+-- 
+-- Your Google Sheet should have columns:
+-- A: Email
+-- B: Timestamp  
+-- C: Source
+-- D: Status (optional)
+-- 
+-- Alternative: Use Google Apps Script
+-- Create a Google Apps Script web app that accepts POST requests
+-- and writes to your sheet. Set GOOGLE_SHEETS_URL to the web app URL.
