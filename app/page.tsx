@@ -35,6 +35,22 @@ export default function WaitlistPage() {
                 Dockly!
               </span>
             </h1>
+          </div>
+
+          {/* Waitlist Form */}
+          <div className="max-w-md mx-auto mb-12">
+            <Card className="border-0 shadow-xl bg-white/90 backdrop-blur">
+              <CardContent className="p-8">
+                <div className="mb-6">
+                  <h2 className="text-2xl font-bold text-gray-900 mb-2">Join the Waitlist</h2>
+                  <p className="text-gray-600">Be the first to know when we launch for Brown students</p>
+                </div>
+                <WaitlistForm />
+              </CardContent>
+            </Card>
+          </div>
+
+          <div className="mb-8">
             <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
               We're building a private, student-powered social platform for Brown students. Drop your .edu email to join the interest list for early access, sneak peeks, and help shape the future of campus connection. No spam. No public access. Meet your new best friend or future spouse, join today!
             </p>
@@ -69,19 +85,6 @@ export default function WaitlistPage() {
                 </div>
                 <h3 className="font-semibold text-gray-900 mb-2">Instant Connect</h3>
                 <p className="text-gray-600 text-sm">Quick and easy way to form study groups and friend circles</p>
-              </CardContent>
-            </Card>
-          </div>
-
-          {/* Waitlist Form */}
-          <div className="max-w-md mx-auto">
-            <Card className="border-0 shadow-xl bg-white/90 backdrop-blur">
-              <CardContent className="p-8">
-                <div className="mb-6">
-                  <h2 className="text-2xl font-bold text-gray-900 mb-2">Join the Interest List</h2>
-                  <p className="text-gray-600">Be the first to know when we launch for Brown students</p>
-                </div>
-                <WaitlistForm />
               </CardContent>
             </Card>
           </div>

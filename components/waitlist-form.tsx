@@ -96,7 +96,7 @@ export function WaitlistForm() {
         <CheckCircle className="w-16 h-16 text-green-500 mx-auto mb-4" />
         <h3 className="text-xl font-semibold text-gray-900 mb-2">Welcome to Dockly! 🎉</h3>
         <p className="text-gray-600">We'll email you as soon as we launch for Brown students.</p>
-        <p className="text-sm text-gray-500 mt-2">Your email has been successfully saved to our interest list.</p>
+        <p className="text-sm text-gray-500 mt-2">Your email has been successfully saved to our waitlist.</p>
       </div>
     )
   }
@@ -143,7 +143,7 @@ export function WaitlistForm() {
             Joining...
           </>
         ) : (
-          "Join the Interest List"
+          "Join the Waitlist"
         )}
       </Button>
 
