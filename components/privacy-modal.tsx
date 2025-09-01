@@ -49,6 +49,10 @@ export function PrivacyModal({ trigger, children }: PrivacyModalProps) {
               If you are under 18, please obtain parental permission before signing up.
             </p>
             
+            <p>
+              <strong>Intellectual Property:</strong> All rights, title, and interest in and to the Dockly platform, including but not limited to all intellectual property rights, are and will remain the exclusive property of Dockly and its licensors. All content, features, and functionality are protected by copyright, trademark, and other applicable laws.
+            </p>
+            
             <div className="mt-6 pt-4 border-t border-gray-200">
               <h4 className="font-semibold text-gray-800 mb-2">Website Analytics</h4>
               <p>
