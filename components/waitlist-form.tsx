@@ -115,7 +115,7 @@ export function WaitlistForm() {
           onChange={(e) => setEmail(e.target.value)}
           onFocus={handleFormStart}
           required
-          className="w-full"
+          className="w-full placeholder:text-red-500"
           disabled={isSubmitting}
         />
       </div>
@@ -127,14 +127,14 @@ export function WaitlistForm() {
           onCheckedChange={(checked) => setAgreed(checked === true)}
           disabled={isSubmitting}
         />
-        <Label htmlFor="agreement" className="text-sm text-gray-600 leading-tight cursor-pointer">
+        <Label htmlFor="agreement" className="text-[10px] text-gray-600 leading-tight cursor-pointer">
           I agree to receive updates about this student-led initiative and understand the privacy notice.
         </Label>
       </div>
 
       <Button
         type="submit"
-        className="w-full bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700"
+        className="w-full bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-2xl font-bold py-6 shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all duration-200"
         disabled={isSubmitting || !agreed}
       >
         {isSubmitting ? (
@@ -147,7 +147,7 @@ export function WaitlistForm() {
         )}
       </Button>
 
-      <p className="text-xs text-gray-500 text-center">We'll never spam you. Unsubscribe at any time.</p>
+      <p className="text-[10px] text-gray-500 text-center">We'll never spam you. Unsubscribe at any time.</p>
     </form>
   )
 }

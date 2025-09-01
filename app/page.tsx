@@ -37,8 +37,9 @@ export default function WaitlistPage() {
             <Card className="border-0 shadow-2xl bg-white/95 backdrop-blur">
               <CardContent className="p-8">
                 <div className="mb-6">
-                  <h2 className="text-2xl font-bold text-gray-900 mb-2">Join the Waitlist</h2>
-                  <p className="text-gray-600 font-serif">Be the first to know when we launch for Brown students</p>
+                  <p className="text-blue-600 font-bold text-3xl drop-shadow-lg leading-tight">
+                    Be the first to know when we launch!
+                  </p>
                 </div>
                 <WaitlistForm />
               </CardContent>
