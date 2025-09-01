@@ -110,12 +110,12 @@ export function WaitlistForm() {
         <Input
           id="email"
           type="email"
-          placeholder="your.email@brown.edu"
+          placeholder="your_email@brown.edu"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
           onFocus={handleFormStart}
           required
-          className="w-full placeholder:text-red-500"
+          className="w-full placeholder:text-red-700"
           disabled={isSubmitting}
         />
       </div>
