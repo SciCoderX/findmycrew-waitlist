@@ -37,8 +37,8 @@ export default function WaitlistPage() {
             <Card className="border-0 shadow-2xl bg-white/95 backdrop-blur">
               <CardContent className="p-8">
                 <div className="mb-6">
-                  <p className="text-black font-bold text-xl leading-tight font-serif">
-                    Be the first to know when we launch!
+                  <p className="text-black font-bold text-lg leading-tight font-serif">
+                    Be the first to find your campus crew!
                   </p>
                 </div>
                 <WaitlistForm />
@@ -48,7 +48,7 @@ export default function WaitlistPage() {
 
           <div className="mb-8">
             <p className="text-xl text-white mb-8 max-w-2xl mx-auto font-serif drop-shadow-md">
-              We're building a private, student-powered social platform for Brown students. Drop your .edu email to join the interest list for early access, sneak peeks, and help shape the future of campus connection. No spam. No public access. Meet your new best friend or future spouse, join today!
+              We're building a private, student-powered social platform for Brown students. Drop your .edu email to join the interest list for early access, sneak peeks, and help shape the future of campus connection. No spam. No public access. Dock here to navigate your perfect crew!
             </p>
           </div>
 
